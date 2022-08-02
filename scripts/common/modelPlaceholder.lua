@@ -26,8 +26,8 @@ local mod = {
     return modelPlaceholder:addModel("stoneWall2x1", {
       {
         multiKeyBase = "rock",
-        multiCount = 2,
-        defaultModelName = "rock1",
+        multiCount = 3,
+        defaultModelName = "stoneWallSegment",
         resourceTypeIndex = resource.types.rock.index,
         offsetToWalkableHeight = true
       },

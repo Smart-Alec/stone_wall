@@ -36,7 +36,7 @@ mod = {loadOrder: 1, onload: (buildable) =>
         requiredResources: {
             {
                 type: resource.types.rock.index
-                count: 2
+                count: 3
                 afterAction: {
                     actionTypeIndex: action.types.inspect.index
                     durationWithoutSkill: 10.0
