@@ -26,7 +26,7 @@ local mod = {
     return modelPlaceholder:addModel("stoneWall2x1", {
       {
         multiKeyBase = "rock",
-        multiCount = 3,
+        multiCount = 2,
         defaultModelName = "stoneWallSegment",
         resourceTypeIndex = resource.types.rock.index,
         defaultModelShouldOverrideResourceObject = true

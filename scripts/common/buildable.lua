@@ -7,12 +7,9 @@ local mod = {
     local resource = mjrequire("common/resource")
     local skill = mjrequire("common/skill")
     local snapGroup = mjrequire("common/snapGroup")
-    local clearObjectsAndTerrainSequence = {
+    local clearObjectsSequence = {
       {
         constructableSequenceTypeIndex = constructable.sequenceTypes.clearObjects.index
-      },
-      {
-        constructableSequenceTypeIndex = constructable.sequenceTypes.clearTerrain.index
       },
       {
         constructableSequenceTypeIndex = constructable.sequenceTypes.clearObjects.index
@@ -40,12 +37,12 @@ local mod = {
       },
       allowYTranslation = true,
       allowXZRotation = true,
-      buildSequence = clearObjectsAndTerrainSequence,
+      buildSequence = clearObjectsSequence,
       maleSnapPoints = snapGroup.malePoints.wallMaleSnapPoints,
       requiredResources = {
         {
           type = resource.types.rock.index,
-          count = 3,
+          count = 2,
           afterAction = {
             actionTypeIndex = action.types.inspect.index,
             durationWithoutSkill = 10.0

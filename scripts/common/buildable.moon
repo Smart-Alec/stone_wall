@@ -6,9 +6,8 @@ mod = {loadOrder: 1, onload: (buildable) =>
     skill = mjrequire "common/skill"
     snapGroup = mjrequire "common/snapGroup"
 
-    clearObjectsAndTerrainSequence = {
+    clearObjectsSequence = {
         {constructableSequenceTypeIndex: constructable.sequenceTypes.clearObjects.index}
-        {constructableSequenceTypeIndex: constructable.sequenceTypes.clearTerrain.index}
         {constructableSequenceTypeIndex: constructable.sequenceTypes.clearObjects.index}
         {constructableSequenceTypeIndex: constructable.sequenceTypes.bringResources.index}
         {constructableSequenceTypeIndex: constructable.sequenceTypes.bringTools.index}
@@ -29,14 +28,14 @@ mod = {loadOrder: 1, onload: (buildable) =>
         allowYTranslation: true
         allowXZRotation: true
 
-        buildSequence: clearObjectsAndTerrainSequence
+        buildSequence: clearObjectsSequence
 
         maleSnapPoints: snapGroup.malePoints.wallMaleSnapPoints --TODO: Add custom snap points
 
         requiredResources: {
             {
                 type: resource.types.rock.index
-                count: 3
+                count: 2
                 afterAction: {
                     actionTypeIndex: action.types.inspect.index
                     durationWithoutSkill: 10.0
