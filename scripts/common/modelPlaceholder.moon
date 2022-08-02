@@ -26,19 +26,8 @@ mod = {loadOrder: 1, onload: (modelPlaceholder) =>
 
     modelPlaceholder\addModel "stoneWall2x1", {
         {
-            key: "stoneWallSegment_1"
-            defaultModelName: "stoneWallSegment"
-            resourceTypeIndex: resource.types.rock.index
-            defaultModelShouldOverrideResourceObject: true
-        }
-        {
-            key: "stoneWallSegment_2"
-            defaultModelName: "stoneWallSegment"
-            resourceTypeIndex: resource.types.rock.index
-            defaultModelShouldOverrideResourceObject: true
-        }
-        {
-            key: "stoneWallSegment_3"
+            multiKeyBase: "rock"
+            multiCount: 3
             defaultModelName: "stoneWallSegment"
             resourceTypeIndex: resource.types.rock.index
             defaultModelShouldOverrideResourceObject: true
