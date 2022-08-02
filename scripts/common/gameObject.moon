@@ -23,8 +23,8 @@ mod = {loadOrder: 1, onload: (gameObject) =>
         objectViewOffsetFunction: ->
             vec3(-0.5, 0.0, 1.0)
         markerPositions: {
-            {localOffset: vec3(0.0, mj:mToP 1.5, mj:mToP 0.5)}
-            {localOffset: vec3(0.0, mj:mToP 1.5, mj:mToP -0.5)}
+            {localOffset: vec3(0.0, mj\mToP 1.5, mj\mToP 0.5)}
+            {localOffset: vec3(0.0, mj\mToP 1.5, mj\mToP -0.5)}
         }
     }
 
@@ -40,8 +40,8 @@ mod = {loadOrder: 1, onload: (gameObject) =>
         objectViewOffsetFunction: ->
             vec3(-0.5, 0.0, 1.0)
         markerPositions: {
-            {localOffset: vec3(0.0, mj:mToP 1.5, mj:mToP 0.5)}
-            {localOffset: vec3(0.0, mj:mToP 1.5, mj:mToP -0.5)}
+            {localOffset: vec3(0.0, mj\mToP 1.5, mj\mToP 0.5)}
+            {localOffset: vec3(0.0, mj\mToP 1.5, mj\mToP -0.5)}
         }
     }
 }

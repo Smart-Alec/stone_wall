@@ -38,3 +38,4 @@ mod = {loadOrder: 1, onload: (modelPlaceholder) =>
         }
     }
 }
+mod

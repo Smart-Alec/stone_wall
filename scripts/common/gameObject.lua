@@ -26,18 +26,10 @@ local mod = {
       end,
       markerPositions = {
         {
-          localOffset = vec3(0.0, {
-            mj = mToP(1.5, {
-              mj = mToP(0.5)
-            })
-          })
+          localOffset = vec3(0.0, mj:mToP(1.5, mj:mToP(0.5)))
         },
         {
-          localOffset = vec3(0.0, {
-            mj = mToP(1.5, {
-              mj = mToP(-0.5)
-            })
-          })
+          localOffset = vec3(0.0, mj:mToP(1.5, mj:mToP(-0.5)))
         }
       }
     }
@@ -56,18 +48,10 @@ local mod = {
       end,
       markerPositions = {
         {
-          localOffset = vec3(0.0, {
-            mj = mToP(1.5, {
-              mj = mToP(0.5)
-            })
-          })
+          localOffset = vec3(0.0, mj:mToP(1.5, mj:mToP(0.5)))
         },
         {
-          localOffset = vec3(0.0, {
-            mj = mToP(1.5, {
-              mj = mToP(-0.5)
-            })
-          })
+          localOffset = vec3(0.0, mj:mToP(1.5, mj:mToP(-0.5)))
         }
       }
     }
