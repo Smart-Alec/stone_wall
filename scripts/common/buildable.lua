@@ -36,7 +36,7 @@ local mod = {
       summary = "A short stone wall.",
       classification = constructable.classifications.build.index,
       skills = {
-        required = skill.types.mining
+        required = skill.types.mining.index
       },
       allowYTranslation = true,
       allowXZRotation = true,

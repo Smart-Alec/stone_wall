@@ -24,7 +24,7 @@ mod = {loadOrder: 1, onload: (buildable) =>
         summary: "A short stone wall."
         classification: constructable.classifications.build.index
 
-        skills: {required: skill.types.mining}
+        skills: {required: skill.types.mining.index}
 
         allowYTranslation: true
         allowXZRotation: true
