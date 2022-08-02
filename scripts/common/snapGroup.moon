@@ -1,7 +1,7 @@
 mod = {loadOrder: 1, onload: (snapGroup) =>
     mjm = mjrequire "common/mjm"
     vec3 = mjm.vec3
-    
+
     snapGroup.malePoints.wall2x1MaleSnapPoints = {
         {
             snapGroup: snapGroup.maleTypes.wallEdgeBottomX.index,
