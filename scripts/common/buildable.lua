@@ -38,7 +38,7 @@ local mod = {
       allowYTranslation = true,
       allowXZRotation = true,
       buildSequence = clearObjectsSequence,
-      maleSnapPoints = snapGroup.malePoints.wallMaleSnapPoints,
+      maleSnapPoints = snapGroup.malePoints.wall2x1MaleSnapPoints,
       requiredResources = {
         {
           type = resource.types.rock.index,
