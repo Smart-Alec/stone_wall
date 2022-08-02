@@ -30,7 +30,7 @@ mod = {loadOrder: 1, onload: (buildable) =>
 
         buildSequence: clearObjectsSequence
 
-        maleSnapPoints: snapGroup.malePoints.wall2x1MaleSnapPoints
+        maleSnapPoints: snapGroup.malePoints.wall2x2MaleSnapPoints --TODO: Add custom snap points
 
         requiredResources: {
             {

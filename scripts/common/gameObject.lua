@@ -16,7 +16,7 @@ local mod = {
       hasPhysics = true,
       isBuiltObject = true,
       preventShiftOnTerrainSurfaceModification = true,
-      femaleSnapPoints = snapGroup.femalePoints.standardWallFemaleSnapPoints,
+      femaleSnapPoints = snapGroup.femalePoints.wall2x2FemaleSnapPoints,
       isPathFindingCollider = true,
       objectViewRotationFunction = function()
         return mat3Rotate(mat3Identity, 0.5, normalize(vec3(0.0, 1.0, 0.0)))
@@ -39,7 +39,7 @@ local mod = {
       hasPhysics = true,
       isInProgressBuildObject = true,
       preventShiftOnTerrainSurfaceModification = true,
-      femaleSnapPoints = snapGroup.femalePoints.standardWallFemaleSnapPoints,
+      femaleSnapPoints = snapGroup.femalePoints.wall2x2FemalSnapPoints,
       objectViewRotationFunction = function()
         return mat3Rotate(mat3Identity, 0.5, normalize(vec3(0.0, 1.0, 0.0)))
       end,

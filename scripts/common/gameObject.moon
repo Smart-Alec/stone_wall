@@ -16,7 +16,7 @@ mod = {loadOrder: 1, onload: (gameObject) =>
         hasPhysics: true
         isBuiltObject: true
         preventShiftOnTerrainSurfaceModification: true
-        femaleSnapPoints: snapGroup.femalePoints.standardWallFemaleSnapPoints --TODO: Add custom snap points
+        femaleSnapPoints: snapGroup.femalePoints.wall2x2FemaleSnapPoints --TODO: Add custom snap points
         isPathFindingCollider: true
         objectViewRotationFunction: ->
             mat3Rotate mat3Identity, 0.5, normalize vec3(0.0, 1.0, 0.0)
@@ -34,7 +34,7 @@ mod = {loadOrder: 1, onload: (gameObject) =>
         hasPhysics: true
         isInProgressBuildObject: true
         preventShiftOnTerrainSurfaceModification: true
-        femaleSnapPoints: snapGroup.femalePoints.standardWallFemaleSnapPoints --TODO: Add custom snap points
+        femaleSnapPoints: snapGroup.femalePoints.wall2x2FemalSnapPoints --TODO: Add custom snap points
         objectViewRotationFunction: ->
             mat3Rotate mat3Identity, 0.5, normalize vec3(0.0, 1.0, 0.0)
         objectViewOffsetFunction: ->
