@@ -34,7 +34,7 @@ mod = {loadOrder: 1, onload: (buildable) =>
 
         requiredResources: {
             {
-                type: resource.types.stone.index --???
+                type: resource.types.rock.index
                 count: 2
                 afterAction: {
                     actionTypeIndex: action.types.inspect.index

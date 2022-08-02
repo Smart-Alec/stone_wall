@@ -43,7 +43,7 @@ local mod = {
       maleSnapPoints = snapGroup.malePoints.wallMaleSnapPoints,
       requiredResources = {
         {
-          type = resource.types.stone.index,
+          type = resource.types.rock.index,
           count = 2,
           afterAction = {
             actionTypeIndex = action.types.inspect.index,

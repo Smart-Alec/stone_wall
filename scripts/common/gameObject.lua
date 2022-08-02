@@ -16,13 +16,60 @@ local mod = {
       hasPhysics = true,
       isBuiltObject = true,
       preventShiftOnTerrainSurfaceModification = true,
-      preventGrassAndSnow = false,
-      blocksRain = false,
       femaleSnapPoints = snapGroup.femalePoints.standardWallFemaleSnapPoints,
       isPathFindingCollider = true,
       objectViewRotationFunction = function()
         return mat3Rotate(mat3Identity, 0.5, normalize(vec3(0.0, 1.0, 0.0)))
-      end
+      end,
+      objectViewOffsetFunction = function()
+        return vec3(-0.5, 0.0, 1.0)
+      end,
+      markerPositions = {
+        {
+          localOffset = vec3(0.0, {
+            mj = mToP(1.5, {
+              mj = mToP(0.5)
+            })
+          })
+        },
+        {
+          localOffset = vec3(0.0, {
+            mj = mToP(1.5, {
+              mj = mToP(-0.5)
+            })
+          })
+        }
+      }
+    }
+    gameObject.gameObjectsTable["build_stoneWall2x1"] = {
+      modelName = "stoneWall2x1",
+      scale = 1.0,
+      hasPhysics = true,
+      isInProgressBuildObject = true,
+      preventShiftOnTerrainSurfaceModification = true,
+      femaleSnapPoints = snapGroup.femalePoints.standardWallFemaleSnapPoints,
+      objectViewRotationFunction = function()
+        return mat3Rotate(mat3Identity, 0.5, normalize(vec3(0.0, 1.0, 0.0)))
+      end,
+      objectViewOffsetFunction = function()
+        return vec3(-0.5, 0.0, 1.0)
+      end,
+      markerPositions = {
+        {
+          localOffset = vec3(0.0, {
+            mj = mToP(1.5, {
+              mj = mToP(0.5)
+            })
+          })
+        },
+        {
+          localOffset = vec3(0.0, {
+            mj = mToP(1.5, {
+              mj = mToP(-0.5)
+            })
+          })
+        }
+      }
     }
   end
 }
