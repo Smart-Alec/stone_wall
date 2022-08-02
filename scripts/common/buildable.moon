@@ -1,6 +1,7 @@
 mod = {loadOrder: 1, onload: (buildable) =>
     action = mjrequire "common/action"
     constructable = mjrequire "common/constructable"
+    locale = mjrequire "common/locale"
     resource = mjrequire "common/resource"
     skill = mjrequire "common/skill"
     snapGroup = mjrequire "common/snapGroup"
@@ -18,8 +19,8 @@ mod = {loadOrder: 1, onload: (buildable) =>
         modelName: "stoneWall2x1"
         inProgressGameObjectTypeKey: "build_stoneWall2x1"
         finalGameObjectTypeKey: "stoneWall2x1"
-        name: "Stone Wall" --TODO: Add localizations
-        plural: "Stone Walls"
+        name: locale\get "object_stoneWall2x1"
+        plural: locale\get "object_stoneWall2x1_plural"
         summary: "A short stone wall."
         classification: constructable.classifications.build.index
 
